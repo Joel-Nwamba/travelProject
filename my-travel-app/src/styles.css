@@ -1,0 +1,26 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+    background-color: #F55A5A;
+    display: flex;
+    width: 550px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav--header {
+    font-weight: 500;
+    font-family: "inter";
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: -0.075em;
+}
