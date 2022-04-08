@@ -8,6 +8,7 @@ body {
     background-color: #F55A5A;
     display: flex;
     width: 550px;
+    height: 55px;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -26,13 +27,32 @@ body {
 }
 
 .image--header {
-    width: 500px;
+    width: 125px;
+    height: 170px;
+    border-radius: 5px;
 }
 
 .main-card {
     display: flex;
-    flex-direction: column;
     width: 550px;
     height: 770px;
     margin-top: 20px;
+}
+
+.card--container {
+    display: flex;
+    flex-direction: column;
+}
+
+.card--location {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title--header {
+    font-family: "inter";
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #2B283A;
 }
