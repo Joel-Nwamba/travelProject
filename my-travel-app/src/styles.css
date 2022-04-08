@@ -24,3 +24,15 @@ body {
     line-height: 18px;
     letter-spacing: -0.075em;
 }
+
+.image--header {
+    width: 500px;
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 770px;
+    margin-top: 20px;
+}
