@@ -21,7 +21,9 @@ export default function App() {
     return(
         <div>
             <Navbar />
+            <section className="card-list-section">
             {cardValue}
+            </section>
         </div>
     )
 }

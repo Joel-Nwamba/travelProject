@@ -32,27 +32,59 @@ body {
     border-radius: 5px;
 }
 
-.main-card {
-    display: flex;
-    width: 550px;
-    height: 770px;
-    margin-top: 20px;
-}
-
-.card--container {
-    display: flex;
-    flex-direction: column;
-}
-
-.card--location {
-    display: flex;
-    justify-content: space-around;
-}
-
 .title--header {
-    font-family: "inter";
+    /* grid-area: head; */
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    left: 260px;
     font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
-    color: #2B283A;
+    color: #2b283a;
+}
+.main-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+      'image maps'
+      'image head'
+      'image dates'
+      'image descrition';
+    border-bottom: 1px solid #f5f5f5;
+    padding: 20px 40px;
+    column-gap: 20px;
+}
+
+
+.card-list-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 45px 0 28px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.card-location-map {
+    grid-area: maps;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dates {
+    grid-area: dates;
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;
+    color: #2b283a;
+    margin-bottom: 10px;
+}
+
+.descritpion {
+    grid-area: description;
+    display: flex;
+    font-weight: 400;
+    color: #2b283a;
+    line-height: 150%;
 }
