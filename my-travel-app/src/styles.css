@@ -7,7 +7,7 @@ body {
 .nav {
     background-color: #F55A5A;
     display: flex;
-    width: 550px;
+    width: 650px;
     height: 55px;
     justify-content: center;
     align-items: center;
@@ -27,20 +27,28 @@ body {
 }
 
 .image--header {
-    width: 125px;
+    width: 100%;
     height: 170px;
     border-radius: 5px;
 }
 
-.title--header {
-    /* grid-area: head; */
+.header {
+    grid-area: head;
     display: flex;
-    position: relative;
+    align-items: center;
+    gap: 20px;
+}
+
+.title--header {
+    grid-area: head;
+    display: flex;
+    /* position: relative;
     bottom: 100px;
-    left: 260px;
+    left: 260px; */
     font-weight: 700;
     color: #2b283a;
 }
+
 .main-card {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -48,7 +56,7 @@ body {
       'image maps'
       'image head'
       'image dates'
-      'image descrition';
+      'image description';
     border-bottom: 1px solid #f5f5f5;
     padding: 20px 40px;
     column-gap: 20px;
@@ -70,6 +78,11 @@ margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.date-description {
+    display: flex;
+    flex-direction: column;
 }
 
 .dates {
